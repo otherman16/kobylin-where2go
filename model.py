@@ -7,7 +7,7 @@ class DB:
 
     REDIS_URL = os.environ.get('REDIS_URL')
     db = redis.Redis.from_url(REDIS_URL)
-    db.flushdb()
+    # db.flushdb()
 
 
 class User:
